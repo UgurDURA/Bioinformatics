@@ -59,7 +59,7 @@ K.mat[1:5,1:5]## view Kinship
 
 ################***CHECKING POPULATION STRUCTURE EFFECTS***###############
 ## Principal components analysis
-
+dev.off()
 geno.scale <- scale(geno.gwas,center=T,scale=F) # Data needs to be center.
 svdgeno <- svd(geno.scale) 
 PCA <- geno.scale%*%svdgeno$v #Principal components
@@ -124,7 +124,9 @@ gwasresults4<-GWAS(pheno.gwas,geno.gwas2, fixed=colnames(pheno.gwas)[2:5], K=K.m
 ###################################################################################
 
 str(gwasresults)
-str(gwasresults)
+str(gwasresults2)
+str(gwasresults3)
+str(gwasresults4)
 #First 3 columns are just the information from markers and map.
 #Fouth and next columns are the results form GWAS. Those values are already
 #the  -log10 pvalues, so no more transformation needs to be done to plot them. 
