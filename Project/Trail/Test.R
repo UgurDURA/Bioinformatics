@@ -1,12 +1,18 @@
 
-library(datasets)
+# library(datasets)
+# 
+# head(iris)
+# summary(iris)
+# plot(iris)
+# 
+# detach("package:datasets", unload = TRUE)
+# 
+# dev.off()
+# 
+# cat("014") #ctrl+L
+# 
 
-head(iris)
-summary(iris)
-plot(iris)
+install.packages("pacman")
 
-#detach("package:datasets", unload = TRUE)
-
-#dev.off()
-
+require(pacman)
 
