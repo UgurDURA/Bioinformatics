@@ -4,3 +4,11 @@
 .Ruserdata
 *.icloud
 *.icloud
+Project/GWAS-Tutorial/data/fully_imputed_numeric.rds
+Project/dataverse_files/.RDataTmp1
+Project/dataverse_files/.RDataTmp
+Project/GWAS-Tutorial/data/.DS_Store
+Project/GWAS-Tutorial/.DS_Store
+*.rds
+*.bed
+*.gds
