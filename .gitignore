@@ -12,3 +12,5 @@ Project/GWAS-Tutorial/.DS_Store
 *.rds
 *.bed
 *.gds
+*.gz
+*.vcf
