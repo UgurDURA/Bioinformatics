@@ -1,0 +1,6 @@
+[attempt_202206190719_0012_m_000000_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0100000001_0120000000	29	6	1	37
+[attempt_202206190719_0012_m_000001_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0080000001_0100000000	28	6	1	37
+[attempt_202206190719_0012_m_000002_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0020000001_0040000000	27	5	0	34
+[attempt_202206190719_0012_m_000003_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0040000001_0060000000	25	5	1	32
+[attempt_202206190719_0012_m_000004_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0060000001_0080000000	26	6	1	35
+[attempt_202206190719_0012_m_000005_0] INFO  job-20220623-105117-278-chr-12	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr12.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_12_0000000001_0020000000	34	6	0	41

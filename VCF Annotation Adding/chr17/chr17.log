@@ -1,0 +1,17 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf 24sample_Out.vcf.gz
+	--chr 17
+	--out chr17
+	--recode
+
+Using zlib version: 1.2.11
+Warning: Expected at least 2 parts in INFO entry: ID=ASSAY_TYPE,Number=1,Type=Integer,Description="Identifies type of assay (0 - Infinium II, 1 - Infinium I (A/T), 2 - Infinium I (G/C)">
+Warning: Expected at least 2 parts in INFO entry: ID=ASSAY_TYPE,Number=1,Type=Integer,Description="Identifies type of assay (0 - Infinium II, 1 - Infinium I (A/T), 2 - Infinium I (G/C)">
+After filtering, kept 24 out of 24 Individuals
+Outputting VCF file...
+After filtering, kept 21209 out of a possible 654014 Sites
+Run Time = 7.00 seconds

@@ -1,0 +1,10 @@
+[attempt_202206190719_0003_m_000000_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0100000001_0120000000	22	5	1	30
+[attempt_202206190719_0003_m_000001_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0120000001_0140000000	24	6	1	32
+[attempt_202206190719_0003_m_000002_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0140000001_0160000000	22	6	1	30
+[attempt_202206190719_0003_m_000003_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0160000001_0180000000	26	6	1	34
+[attempt_202206190719_0003_m_000004_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0200000001_0220000000	23	5	1	31
+[attempt_202206190719_0003_m_000005_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0220000001_0240000000	26	7	2	36
+[attempt_202206190719_0003_m_000006_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0020000001_0040000000	30	5	1	37
+[attempt_202206190719_0003_m_000007_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0040000001_0060000000	29	6	1	38
+[attempt_202206190719_0003_m_000008_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0060000001_0080000000	27	5	0	35
+[attempt_202206190719_0003_m_000009_0] INFO  job-20220623-104723-775-chr-2	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr2.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_2_0000000001_0020000000	28	6	1	36

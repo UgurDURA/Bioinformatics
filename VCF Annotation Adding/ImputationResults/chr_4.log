@@ -1,0 +1,2 @@
+[attempt_202206190719_0005_m_000000_0] INFO  job-20220623-104808-908-chr-4	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr4.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_4_0080000001_0100000000	26	5	1	33
+[attempt_202206190719_0005_m_000001_0] INFO  job-20220623-104808-908-chr-4	cloudgene/apps/hapmap-2@2.0.0/2.0.0/m3vcfs/hapmap_r22.chr4.CEU.hg19.recode.m3vcf.gz	ea6bacee07aa	chunk_4_0020000001_0040000000	27	6	1	36
