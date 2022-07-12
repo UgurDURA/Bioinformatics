@@ -2,35 +2,110 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>PGS Calculator</title>
 
+
+<!--PyScript-->
 <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+  <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/1bc45e4475.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-<nav class = "navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class = "navbar-brand" href="">PGS Calculator</a>
-    <ul class="navbar-nav ms-auto">
-        <li class = "nav-item">
-            <a class = "nav-link" href="">Contact</a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link" href="">Pricing</a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link" href="">Calculate</a>
-        </li>
+    <section id = "title">
+        <nav class = "navbar navbar-expand-lg navbar-dark bg-dark">
 
-    </ul>
-</nav>
-<h1>
-    <py-script>
-        print("Hello World")
-    </py-script>
-</h1>
+            <a class = "navbar-brand" href="">PGS Calculator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class = "collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav  ms-auto">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href="">Contact</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href="">Pricing</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href="">Calculate</a>
+                    </li>
+            
+                </ul>
+        
+              </div>
+        
+        </nav>
+        <h1>
+            <py-script>
+                print("Hello World")
+            </py-script>
+        </h1>
+
+
+      <!-- Title -->
+      <div class="row">
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+
+          <h1 class="big-heading">Polygenic Risk Score Analysis</h1>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><button type="button" class="btn btn-dark btn-lg download-buttonApple"><i class="fab fa-apple"></i> Download</button></a>
+         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><button type="button" class="btn btn-outline-light btn-lg download-buttonGoogle"><i class="fab fa-google-play"></i> Download</button></a>
+
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img class=title-img src="Solaris.png" alt="Solaris">
+        </div>
+
+      </div>
+
+
+    </div>
+    </section>
+
+<section id = "features">
+
+  <div class = "row">
+
+  <div class = "feature-box col-lg-4">
+    <i class="fa-solid fa-file-arrow-up fa-4x"></i>
+    <h3>Upload your Sample</h3>
+    <p>Start with uploading your patient VCF file</p>
+  </div>
+
+  <div class = "feature-box col-lg-4">
+    <i class="fa-solid fa-wave-square fa-4x"></i>
+    <h3>Calculate</h3>
+    <p>Wait for us to calculate your polygenic risk score</p>
+  </div> 
+
+  <div class = "feature-box col-lg-4">
+    <i class="fa-solid fa-chart-line fa-4x"></i>
+    <h3>Analyze</h3>
+    <p>Analyze your scores with graphs for each patient</p>
+  </div>
+
+  </div>
+  
+
+
+</section>
+
+
 
 </body>
 </html>
