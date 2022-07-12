@@ -30,6 +30,9 @@
   <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.0/dist/panel.min.js"></script>
 
   <script src="https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js"></script>
+
+  <!-- JavaScript-->
+
 </head>
 
 <body>
@@ -114,84 +117,78 @@
 
 </section>
 
+<py-env>
+  - bokeh
+  - numpy
+  - panel
+  - pandas
+  - bokeh
+    </py-env>
+
 <section id = "upload">
-  <div class = "row overflow-hidden" id="upload-content">
 
-    <div class="upload-box col-lg-4 col-md-4 col-sm-12" id = "upload-main">
-      <div id ="fileInput"></div>
-    </div>
-    <py-env>
-      - bokeh
-      - numpy
-      - panel
-      - pandas
-      - bokeh
+  <div class = "row">
 
-        </py-env>
+  <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+<input type="file" id="input">
+<a id="Upload" download>Download</a>
+  </div>
 
-       <p>
-      This example shows how to call the File System Access APIs. These APIs permit local file system access.
-    </p>
-    <div id="output"></div>
-    <br />
-    <button class="button" type="button" id="file_save">Write Local File</button>
-    <br />
-    <br />
-    <h4>File Contents:</h4>
-    <form action="/action_page.php">
-      <input type="file" id="myFile" name="filename">
-      <input type="Upload">
-    </form>
-    <py-script output="output">
-import asyncio
-import sys
-from js import alert, document, Object, window
-from pyodide import create_proxy, to_js
+  <div  id = 'outResult' class = "feature-box col-lg-4 col-md-4 col-sm-12">
+    <label  for="output">Given Data </label>
+    <input  type="textbox" name="output"></input>
+  
+  </div>
+  <script>
 
-async def file_save(event):
-	# Note: print() does not work in event handlers
+    outResult.style.display = 'none';
+  
+  </script>
 
-	try:
-		options = {
-			"startIn": "documents",
-			"suggestedName": "Sample.vcf"
-		}
 
-		fileHandle = await window.showSaveFilePicker(Object.fromEntries(to_js(options)))
-	except Exception as e:
-		console.log('Exception: ' + str(e))
-		return
+<script>
+var inputElement = document.getElementById("input");
+var reader = new FileReader();
+var downloadLink = document.getElementById('downloadLink');
+
+reader.onloadend = function(){
+  console.log(reader.result);
+
+  document.getElementsByName('output')[0].value= reader.result;
+  outResult.style.display = 'block';
+
+}
+inputElement.addEventListener("change", handleFiles, false);
+function handleFiles() {
+  var fileSelected = this.files[0]; /* now you can work with the file list */
+  reader.readAsBinaryString(fileSelected);
+  downloadLink.href = window.URL.createObjectURL(fileSelected);
+}
+
+</script>
+
 
   
-  
-	content = document.getElementById("myFile").value
 
-	file = await fileHandle.createWritable()
-	await file.write(content)
-	await file.close()
-	return
+<div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+  <i class="fa-solid fa-file-import fa-10x fa-fw upload-img"></i>
+</div>
 
-def setup_button():
-	# Create a Python proxy for the callback function
-	file_save_proxy = create_proxy(file_save)
-
-	# Set the listener to the callback
-	document.getElementById("file_save").addEventListener("click", file_save_proxy, False)
-
-setup_button()
-    </py-script>
-  
-    <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
-      <i class="fa-solid fa-file-import fa-10x fa-fw upload-img"></i>
-    <p class = "upload-txt">Analyze your scores with graphs for each patient</p>
   </div>
 
 
-  </div>
+
+
+
+
+
 </section>
 
 
 <section id = "calculate">
+
+
+
  
 </section>
 

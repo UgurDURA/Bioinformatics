@@ -217,11 +217,8 @@ body{
   }
 
   .upload-img{
-    width: 20%;
-    position: absolute;
-    right: 10%;
-    padding: 0% 0%;
-  
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .upload-txt
@@ -230,4 +227,5 @@ body{
 
   }
 
+ 
 
