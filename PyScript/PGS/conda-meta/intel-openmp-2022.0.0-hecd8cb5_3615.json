@@ -1,0 +1,68 @@
+{
+  "build": "hecd8cb5_3615",
+  "build_number": 3615,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/ugur_dura/opt/anaconda3/pkgs/intel-openmp-2022.0.0-hecd8cb5_3615",
+  "features": "",
+  "files": [
+    "lib/libiomp5.dylib",
+    "lib/libiomp5_db.dylib",
+    "lib/libiompstubs5.dylib",
+    "licensing/compiler/openmp/third-party-programs.txt"
+  ],
+  "fn": "intel-openmp-2022.0.0-hecd8cb5_3615.conda",
+  "legacy_bz2_md5": "1724aa349123056610c046f48e770e56",
+  "legacy_bz2_size": 1271406,
+  "license": "LicenseRef-ProprietaryIntel",
+  "license_family": "Proprietary",
+  "link": {
+    "source": "/Users/ugur_dura/opt/anaconda3/pkgs/intel-openmp-2022.0.0-hecd8cb5_3615",
+    "type": 1
+  },
+  "md5": "23bd56bb51103e1a6d10e5e4d33ec694",
+  "name": "intel-openmp",
+  "package_tarball_full_path": "/Users/ugur_dura/opt/anaconda3/pkgs/intel-openmp-2022.0.0-hecd8cb5_3615.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libiomp5.dylib",
+        "path_type": "hardlink",
+        "sha256": "2a83af020921024264ec593dff4c3be79c14b1fb474fe1c63222da1292e71f2a",
+        "sha256_in_prefix": "2a83af020921024264ec593dff4c3be79c14b1fb474fe1c63222da1292e71f2a",
+        "size_in_bytes": 2978928
+      },
+      {
+        "_path": "lib/libiomp5_db.dylib",
+        "path_type": "hardlink",
+        "sha256": "045d13a6a8099db625570bda90a43f4ea6b9bd8ce1f426950dc7944300f5e8ce",
+        "sha256_in_prefix": "045d13a6a8099db625570bda90a43f4ea6b9bd8ce1f426950dc7944300f5e8ce",
+        "size_in_bytes": 290352
+      },
+      {
+        "_path": "lib/libiompstubs5.dylib",
+        "path_type": "hardlink",
+        "sha256": "5ce8d0d3f5e901c03384a88d39d9cda8bb69e924c63fcfc341ce0ab87f8ce254",
+        "sha256_in_prefix": "5ce8d0d3f5e901c03384a88d39d9cda8bb69e924c63fcfc341ce0ab87f8ce254",
+        "size_in_bytes": 186288
+      },
+      {
+        "_path": "licensing/compiler/openmp/third-party-programs.txt",
+        "path_type": "hardlink",
+        "sha256": "753301db61ffc9b486e9d3e8c6758ffc5db6679ea0cee32c4935b9e1a2d56bc5",
+        "sha256_in_prefix": "753301db61ffc9b486e9d3e8c6758ffc5db6679ea0cee32c4935b9e1a2d56bc5",
+        "size_in_bytes": 31156
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "de958799145b71b58e943a436c96efb5ff5f7f327c017139554f17c8ef01a329",
+  "size": 994247,
+  "subdir": "osx-64",
+  "timestamp": 1642709146919,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/intel-openmp-2022.0.0-hecd8cb5_3615.conda",
+  "version": "2022.0.0"
+}
