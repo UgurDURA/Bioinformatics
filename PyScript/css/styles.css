@@ -93,14 +93,14 @@ body{
   
   /* favicons */
   .icon-features{
-    color: #f56476;
+    color: #EC7063 ;
     padding-bottom: 1.5rem;
   
   
   }
   
   .icon-features:hover{
-   color:#ff4c68;
+   color:#f80a0a;
   }
   
   /* Features */
@@ -204,3 +204,30 @@ body{
   {
     color:#ff4c68;
   }
+
+  /* Upload Section */
+
+
+  #upload
+  {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #EC7063;
+    color: #fff;
+  }
+
+  .upload-img{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    padding: 0% 0%;
+  
+  }
+
+  .upload-txt
+  {
+    text-align:inherit
+
+  }
+
+

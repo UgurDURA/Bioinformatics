@@ -21,6 +21,15 @@
     <script src="https://kit.fontawesome.com/1bc45e4475.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
 
+   <!-- JavaScript Bokeh -->
+
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.js"></script>
+  <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
+  <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.0/dist/panel.min.js"></script>
+
+  <script src="https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js"></script>
 </head>
 
 <body>
@@ -81,20 +90,20 @@
 
   <div class = "row">
 
-  <div class = "feature-box col-lg-4">
-    <i class="fa-solid fa-file-arrow-up fa-4x"></i>
+  <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+    <i class="fa-solid fa-file-arrow-up fa-4x fa-fw icon-features"></i>
     <h3>Upload your Sample</h3>
     <p>Start with uploading your patient VCF file</p>
   </div>
 
-  <div class = "feature-box col-lg-4">
-    <i class="fa-solid fa-wave-square fa-4x"></i>
+  <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+    <i class="fa-solid fa-wave-square fa-4x fa-fw icon-features"></i>
     <h3>Calculate</h3>
     <p>Wait for us to calculate your polygenic risk score</p>
   </div> 
 
-  <div class = "feature-box col-lg-4">
-    <i class="fa-solid fa-chart-line fa-4x"></i>
+  <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+    <i class="fa-solid fa-chart-line fa-4x fa-fw icon-features"></i>
     <h3>Analyze</h3>
     <p>Analyze your scores with graphs for each patient</p>
   </div>
@@ -104,6 +113,96 @@
 
 
 </section>
+
+<section id = "upload">
+  <div class = "row overflow-hidden" id="upload-content">
+
+    <div class="upload-box col-lg-4 col-md-4 col-sm-12" id = "upload-main">
+      <div id ="fileInput"></div>
+    </div>
+    <py-env>
+      - bokeh
+      - numpy
+      - panel
+      - pandas
+      - bokeh
+
+        </py-env>
+
+       <p>
+      This example shows how to call the File System Access APIs. These APIs permit local file system access.
+    </p>
+    <div id="output"></div>
+    <br />
+    <button class="button" type="button" id="file_save">Write Local File</button>
+    <br />
+    <br />
+    <h4>File Contents:</h4>
+    <form action="/action_page.php">
+      <input type="file" id="myFile" name="filename">
+      <input type="Upload">
+    </form>
+    <py-script output="output">
+import asyncio
+import sys
+from js import alert, document, Object, window
+from pyodide import create_proxy, to_js
+
+async def file_save(event):
+	# Note: print() does not work in event handlers
+
+	try:
+		options = {
+			"startIn": "documents",
+			"suggestedName": "Sample.vcf"
+		}
+
+		fileHandle = await window.showSaveFilePicker(Object.fromEntries(to_js(options)))
+	except Exception as e:
+		console.log('Exception: ' + str(e))
+		return
+
+  
+  
+	content = document.getElementById("myFile").value
+
+	file = await fileHandle.createWritable()
+	await file.write(content)
+	await file.close()
+	return
+
+def setup_button():
+	# Create a Python proxy for the callback function
+	file_save_proxy = create_proxy(file_save)
+
+	# Set the listener to the callback
+	document.getElementById("file_save").addEventListener("click", file_save_proxy, False)
+
+setup_button()
+    </py-script>
+  
+    <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+      <i class="fa-solid fa-file-import fa-10x fa-fw upload-img"></i>
+    <p class = "upload-txt">Analyze your scores with graphs for each patient</p>
+  </div>
+
+
+  </div>
+</section>
+
+
+<section id = "calculate">
+ 
+</section>
+
+
+<section id = "Results">
+ 
+</section>
+
+
+
+
 
 
 
