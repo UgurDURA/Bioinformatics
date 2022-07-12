@@ -91,6 +91,8 @@
 
 <section id = "features">
 
+ 
+
   <div class = "row">
 
   <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
@@ -125,37 +127,65 @@
   - bokeh
     </py-env>
 
+<section id="uploadHeader">
+
+  <div class="row">
+
+
+    <div class="col-lg-6 col-md-12 col-sm-12">
+
+      <h1 class="big-header">Upload Your Sample</h1>
+      
+    </div>
+  </div>
+
+
+</section>
+
 <section id = "upload">
+
+  <div class="col-lg-6 col-md-12 col-sm-12">
+  </div>
+</div>
+
 
   <div class = "row">
 
   <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
-<input type="file" id="input">
-<a id="Upload" download>Download</a>
+    <input type="file" id="input">
   </div>
 
-  <div  id = 'outResult' class = "feature-box col-lg-4 col-md-4 col-sm-12">
-    <label  for="output">Given Data </label>
-    <input  type="textbox" name="output"></input>
+    <div class = "col-lg-4 col-md-4 col-sm-12">
+      <a id="downloadLink" download>Upload</a>
+    </div>
+
+    <div class = "feature-box col-lg-4 col-md-4 col-sm-12">
+  <i class="fa-solid fa-file-import fa-10x fa-fw upload-img"></i>
+</div>
+
   
   </div>
   <script>
 
-    outResult.style.display = 'none';
+txtComment.style.display = 'none'
   
   </script>
 
 
 <script>
+const pako = require('pako');
 var inputElement = document.getElementById("input");
 var reader = new FileReader();
 var downloadLink = document.getElementById('downloadLink');
 
 reader.onloadend = function(){
   console.log(reader.result);
-
-  document.getElementsByName('output')[0].value= reader.result;
-  outResult.style.display = 'block';
+  txtComment.style.display = 'block'
+  var result = pako.inflate(event.target.result, { to: 'string' });
+  var length = 10000;
+  var myString = reader.readAsArrayBuffer(read.result);
+  var myTruncatedString = myString.substring(0,length);
+  document.getElementsByName('output')[0].value= myTruncatedString ;
 
 }
 inputElement.addEventListener("change", handleFiles, false);
@@ -168,18 +198,26 @@ function handleFiles() {
 </script>
 
 
-  
-
-<div class = "feature-box col-lg-4 col-md-4 col-sm-12">
-  <i class="fa-solid fa-file-import fa-10x fa-fw upload-img"></i>
+<div class = "feature-box col-lg-4 col-md-4 col-sm-12" style=" padding-top: 50px; overflow: scroll; width: 400px; height: 300px;" >
+  <textarea name = 'output' id="txtComment" style="height: 500px; width: 500px; background-color:#e35343;color:#fff; padding-top: 50px; "  ></textarea>
 </div>
 
+
   </div>
+</section>
 
 
+<section id="calculateHeader">
+
+  <div class="row">
 
 
+    <div class="col-lg-6 col-md-12 col-sm-12">
 
+      <h1 class="big-header">Calculate</h1>
+      
+    </div>
+  </div>
 
 
 </section>
@@ -189,13 +227,158 @@ function handleFiles() {
 
 
 
+
+
  
 </section>
 
 
-<section id = "Results">
+<section id="resultHeader">
+
+  <div class="row">
+
+
+    <div class="col-lg-6 col-md-12 col-sm-12">
+
+      <h1 class="big-header">Analyze</h1>
+      
+    </div>
+  </div>
+
+
+</section>
+
+
+<section id = "result">
  
 </section>
+
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      <div class="pricing-columnn col-lg-4 col-md-6">
+
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="pricing-columnn col-lg-4 col-md-6">
+
+        <div class="card">
+
+          <div class="card-header">
+
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="pricing-columnn col-lg-4 col-md-12 ">
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class=" btn btn-lg btn-block btn-dark " type="button">Sign Up</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="footer-text">Find the True Love of Your Dog's Life Today.</h3>
+    <div class="row">
+
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+        <button type="button" class="btn btn-dark btn-lg download-buttonApple"><i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-buttonGoogle"><i class="fab fa-google-play"></i> Download</button>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+<i class="social-icon fab fa-facebook-f"></i>
+<i class="social-icon fab fa-twitter"></i>
+  <a class="footer-link" href="https://www.instagram.com/ugur_dura"><i class="social-icon fab fa-instagram"></i></a>
+
+<a href="mailto:ugur_dura@hotmail.com"><i class="social-icon fas fa-envelope"></i></a>
+
+
+
+    <p>© Copyright 2020 TinDog  <br> Ugur DURA </p>
+
+
+  </footer>
 
 
 
